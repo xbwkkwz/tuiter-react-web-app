@@ -1,0 +1,122 @@
+.wd-bookmarks {
+  position: absolute;
+  top: 0px;
+  left: 10%;
+  max-width: 600px;
+  width: 100%;
+  height: 2000px;
+}
+
+.wd-top {
+  position: relative;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.wd-top-title {
+  font-size: 20px;
+}
+
+.wd-top-handle {
+  font-size: 13px;
+}
+
+.wd-top-more {
+  position: absolute;
+  top: 23px;
+  right: 16px;
+}
+
+.wd.post {
+  width: 100%;
+}
+
+.wd-post-top {
+  display: flex;
+  padding-top: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.wd-post-tleft {
+  width: 60px;
+}
+
+.wd-post-tleft-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+}
+
+.wd-post-tright {
+  max-width: 506px;
+  width: 100%;
+  position: relative;
+}
+
+.wd-post-author {
+  font-size: 15px;
+}
+
+.wd-post-content {
+  font-size: 15px;
+  max-width: 506px;
+  width: 100%;
+  margin-top: 3px;
+  margin-bottom: 12px;
+}
+
+.wd-post-img {
+  max-width: 506px;
+  width: 100%;
+  height: 266px;
+}
+
+.wd-post-picture {
+  width: 504px;
+  height: 264px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.wd-post-external {
+  max-width: 504px;
+  padding: 12px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  font-size: 15px;
+}
+
+.wd-post-external-title {
+  font-weight: bold;
+}
+
+.wd-post-external-content {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.wd-post-more {
+  position: absolute;
+  top: 2px;
+  right: 0px;
+}
+
+.wd-post-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 76px;
+  padding-right: 76px;
+}
+
+.wd-post-statistic {
+  margin-left: 12px;
+}
+
+.wd-link {
+  text-decoration: none;
+}
