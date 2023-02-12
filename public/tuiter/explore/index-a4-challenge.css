@@ -1,0 +1,27 @@
+.fa-solid.fa-gear {
+    font-size: 1.7em;
+  }
+  
+  .wd-main-img {
+    width: 100%;
+  }
+  
+  .wd-tweet-img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .wd-logo {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .wd-link {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .wd-follow-button {
+    background-color: #26a7de;
+    border-color: black;
+  }

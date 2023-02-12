@@ -1,0 +1,115 @@
+.wd-explorer {
+  position: absolute;
+  top: 0px;
+  left: 10%;
+  max-width: 600px;
+  width: 100%;
+  height: 1000px;
+}
+
+.wd-search {
+  position: relative;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.wd-search .fa.fa-search {
+  position: absolute;
+  top: 18px;
+  left: 40px;
+}
+
+.wd-search input {
+  font-size: 15px;
+  background-color: rgb(64, 64, 64);
+  padding-left: 50px;
+  max-width: 400px;
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 15px;
+}
+
+.wd-search .fa.fa-gear {
+  position: absolute;
+  top: 18px;
+  right: 12px;
+  font-size: 20px;
+}
+
+.wd-hyperlinks {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.wd-hyperlinks-outer {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.wd-hyperlinks-inner {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.wd-hyperlinks-highlight {
+  border-bottom-style: solid; 
+  border-bottom-width: 3px;
+  border-color: rgb(29, 161, 242);
+}
+
+.wd-tuiter {
+  display: flex;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.wd-tuiter-box-height {
+  height: 100px;
+}
+
+.wd-column-left {
+  max-width: 466px;
+  width: 100%;
+}
+
+.wd-column-right {
+  width: 100px;
+  position: relative;
+}
+
+.wd-tuiter-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+}
+
+.wd-column-right .fa.fa-ellipsis-h {
+  position: absolute;
+  right: 0px;
+}
+
+.wd-topic, .wd-name, .wd-num-tuits {
+  font-size: 13px;
+}
+
+.wd-title {
+  font-weight: bold;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 12px;
+}
+
+.wd-logo {
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  position: relative;
+  top: 2px;
+}

@@ -2,100 +2,154 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Explore</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet"/>
+    <link href="index.css" rel="stylesheet"/>
+    <title>Explore-A4-Tuiter</title>
   </head>
   <body>
-    <div class="wd-explorer">
-      <!-- this is the top part-->
-      <div class="wd-top wd-border">
-        <!-- this is the search bar-->
-        <div class="wd-search">
-          <i class="fa fa-search wd-color-light-gray"></i>
-          <input class="wd-color-white" type="text" placeholder="Search Tuiter"/>
-          <a href="explore-settings.html" title="Explore Settings"><i class="fa fa-gear wd-color-tblue"></i></a>
-        </div>
-        <!-- this is the hyperlink options-->
-        <div class="wd-hyperlinks wd-color-light-gray">
-          <div class="wd-hyperlinks-outer"><div class="wd-hyperlinks-inner wd-hyperlinks-highlight wd-color-tblue">For you</div></div>
-          <div class="wd-hyperlinks-outer"><div class="wd-hyperlinks-inner">Trending</div></div>
-          <div class="wd-hyperlinks-outer"><div class="wd-hyperlinks-inner">COVID-19</div></div>
-          <div class="wd-hyperlinks-outer"><div class="wd-hyperlinks-inner">News</div></div>
-          <div class="wd-hyperlinks-outer"><div class="wd-hyperlinks-inner">Sports</div></div>
-          <div class="wd-hyperlinks-outer"><div class="wd-hyperlinks-inner">Entertainment</div></div>
-        </div>
-      </div>
-      <!-- this is the bottom part-->
-      <div class="wd-bottom">
-        <!-- 1st tuiter -->
-        <div class="wd-tuiter wd-border wd-color-white">
-          <div class="wd-column-left">
-            <div class="wd-topic wd-color-light-gray">Video games · Trending</div>
-            <div class="wd-title">#HBDTheSimsGiveaway</div>
-            <div class="wd-num-tuits wd-color-light-gray">Trending with <span class="wd-color-tblue">Bella Goth</span></div>
+    
+    <div class="container pt-2">
+      <div class="row justify-content-center">
+
+        <!-- left column-->
+        <div class="wd-navigation col-2 col-lg-1 col-xl-2">
+          <div class="wd-nav-list list-group mb-2">
+            <a class="list-group-item" href="#" title="Twitter Home"><i class="fa-brands fa-twitter"></i></a>
+            <a class="list-group-item list-group-item-action" href="#"><i class="fa-solid fa-house"></i><span class="d-none d-xl-inline"> Home</span></a>
+            <a class="list-group-item list-group-item-action active" aria-current="true" href="#"><i class="fa-solid fa-hashtag"></i><span class="d-none d-xl-inline"> Explore</span></a>
+            <a class="list-group-item list-group-item-action" href="#"><i class="fa-solid fa-bell"></i><span class="d-none d-xl-inline "> Notifications</span></a>
+            <a class="list-group-item list-group-item-action" href="#"><i class="fa-solid fa-envelope"></i><span class="d-none d-xl-inline "> Messages</span></a>
+            <a class="list-group-item list-group-item-action" href="#"><i class="fa-solid fa-bookmark"></i><span class="d-none d-xl-inline "> Bookmarks</span></a>
+            <a class="list-group-item list-group-item-action" href="#"><i class="fa-solid fa-list"></i><span class="d-none d-xl-inline "> Lists</span></a>
+            <a class="list-group-item list-group-item-action" href="#"><i class="fa-solid fa-user"></i><span class="d-none d-xl-inline "> Profile</span></a>
+            <a class="list-group-item list-group-item-action" href="#"><i class="fa-solid fa-ellipsis"></i><span class="d-none d-xl-inline "> More</span></a>
           </div>
-          <div class="wd-column-right"><i class="fa fa-ellipsis-h wd-color-light-gray" title="More"></i></div>
+
+          <div class="wd-nav-button d-grid">
+            <button class="btn btn-primary rounded-pill" type="button" value="Input">Tweet</button>
+          </div>
         </div>
-        <!-- 2nd tuiter -->
-        <div class="wd-tuiter wd-border wd-color-white">
-          <div class="wd-column-left wd-tuiter-box-height">
-            <div class="wd-name wd-color-white">
-              <img class="wd-logo" src="images/anthony_logo.jpg" title="Logo">
-              Anthony <i class="fa fa-check-circle"></i> <span class="wd-topic wd-color-light-gray">· Jan 25</span>
+
+        <!-- center column -->
+        <div class="wd-main col-10 col-lg-7 col-xl-6">
+          <div class="wd-main-1 position-relative d-flex align-items-center mb-2">
+            <div class="wd-main-1-glass position-absolute start-0 ms-3"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="wd-main-1-search w-100 me-4"><form action=""><input class="form-control rounded-pill ps-5" type="text" placeholder="Search Twitter" name="search"></form></div>
+            <div class="wd-main-1-setting"><a href="#" title="Settings"><i class="fa-solid fa-gear"></i></a></div>
+          </div>
+          <div class="wd-main-2">
+            <ul class="nav nav-tabs mb-2">
+              <li class="nav-item"><a class="nav-link active" href="#">For you</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Trending</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Sports</a></li>
+              <li class="nav-item d-none d-md-inline"><a class="nav-link" href="#">Entertainment</a></li>
+            </ul>
+          </div>
+          <div class="wd-main-3 position-relative">
+            <img class="wd-main-img" src="images/spacex.jpg" alt="">
+            <div class="position-absolute bottom-0 start-0 ms-2 mb-1 fs-2 fw-bold text-white">SpaceX's Starship</div>
+          </div>
+          <div class="wd-main-4">
+            <div class="wd-main-content list-group mb-2">
+              <!-- 1 -->
+              <div class="d-flex list-group-item list-group-item-action">
+                <div class="w-100 wd-mc-left me-2">
+                  <div class="text-secondary">Web Development</div>
+                  <div><a class="wd-link fw-bold" href="#">ReactJS </a><i class="fa-solid fa-circle-check" title="Verified User"></i><span class="text-secondary"> - 2h</span></div>
+                  <div><a class="wd-link fw-bold" href="#">React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs</a></div>
+                </div>
+                <div><div class="wd-mc-right"><img class="wd-tweet-img rounded-3" src="images/react-tweet.jpg" alt=""></div></div>
+              </div>
+              <!-- 2 -->
+              <div class="d-flex list-group-item list-group-item-action">
+                <div class="w-100 wd-mc-left me-2">
+                  <div><a class="wd-link fw-bold" href="#">JavaScript </a><i class="fa-solid fa-circle-check" title="Verified User"></i><span class="text-secondary"> - 2h</span></div>
+                  <div><a class="wd-link fw-bold" href="#">JavaScript is programming language that can run on browers as well as desktops</a></div>
+                  <div class="text-secondary">123K Tweets</div>
+                </div>
+                <div><div class="wd-mc-right"><img class="wd-tweet-img rounded-3" src="images/javascript-tweet.jpg" alt=""></div></div>
+              </div>
+              <!-- 3 -->
+              <div class="d-flex list-group-item list-group-item-action">
+                <div class="w-100 wd-mc-left me-2">
+                  <div class="text-secondary">Web Development</div>
+                  <div><a class="wd-link fw-bold" href="#">jQuery</a></div>
+                  <div class="text-secondary">123K Tweets</div>
+                </div>
+                <div><div class="wd-mc-right"><img class="wd-tweet-img rounded-3" src="images/jquery-tweet.jpg" alt=""></div></div>
+              </div>
+              <!-- 4 -->
+              <div class="d-flex list-group-item list-group-item-action">
+                <div class="w-100 wd-mc-left me-2">
+                  <div class="text-secondary">Web Development</div>
+                  <div><a class="wd-link fw-bold" href="#">NodeJS </a><i class="fa-solid fa-circle-check" title="Verified User"></i><span class="text-secondary"> - 2h</span></div>
+                  <div class="text-secondary">123K Tweets</div>
+                </div>
+                <div><div class="wd-mc-right"><img class="wd-tweet-img rounded-3" src="images/nodejs-tweet.jpg" alt=""></div></div>
+              </div>
             </div>
-            <div class="wd-title">In GPU the Snapdragon 8 Gen 2 series is faster than the Apple A16 processor</div>
           </div>
-          <div class="wd-column-right wd-tuiter-box-height"><img class="wd-tuiter-image" src="images/s8g2.jpg" title="Image"/></div>
         </div>
-        <!-- 3rd tuiter -->
-        <div class="wd-tuiter wd-border wd-color-white">
-          <div class="wd-column-left wd-tuiter-box-height">
-            <div class="wd-topic wd-color-light-gray">Sports · LIVE</div>
-            <div class="wd-title">Watch the 2022-23 DRL Algorand World Championship Season's DRL SIM Live race on February 4th at 5pm ET</div>
-          </div>
-          <div class="wd-column-right wd-tuiter-box-height"><img class="wd-tuiter-image" src="images/drl.jpg" title="Image"/></div>
-        </div>
-        <!-- 4th tuiter -->
-        <div class="wd-tuiter wd-border wd-color-white">
-          <div class="wd-column-left">
-            <div class="wd-topic wd-color-light-gray">Politics · Trending</div>
-            <div class="wd-title">Alaska</div>
-            <div class="wd-num-tuits wd-color-light-gray">22.1K Tuits</div>
-          </div>
-          <div class="wd-column-right"><i class="fa fa-ellipsis-h wd-color-light-gray" title="More"></i></div>
-        </div>
-        <!-- 5th tuiter -->
-        <div class="wd-tuiter wd-border wd-color-white">
-          <div class="wd-column-left wd-tuiter-box-height">
-            <div class="wd-name wd-color-white">
-              <img class="wd-logo" src="images/wcvb_logo.jpg" title="Logo">
-              WCVB-TV Boston <i class="fa fa-check-circle"></i> <span class="wd-topic wd-color-light-gray">· 39m</span>
+
+        <!-- right column -->
+        <div class="wd-who-to-follow col-lg-4 d-none d-lg-inline ">
+          <div class="wd-follow-list list-group mb-2">
+            <div class="list-group-item fw-bold">Who to follow</div>
+            <!-- 1 -->
+            <div class="d-flex list-group-item list-group-item-action align-items-center">
+              <div class=""><img class="wd-logo rounded-circle" src="images/java-logo.jpg" alt=""></div>
+              <div class="w-100 ps-3">
+                <div class=""><a class="wd-link fw-bold" href="#">Java </a><i class="fa-solid fa-circle-check" title="Verified User"></i></div>
+                <div class="">@Java</div>
+              </div>
+              <div class=""><button class="btn btn-primary rounded-pill wd-follow-button" type="button" value="Input">Follow</button></div>
             </div>
-            <div class="wd-title">Sorry, Spike. There's a new world's oldest living dog — and he's the oldest ever recorded</div>
+            <!-- 2 -->
+            <div class="d-flex list-group-item list-group-item-action align-items-center">
+              <div class=""><img class="wd-logo rounded-circle" src="images/relativity-logo.jpg" alt=""></div>
+              <div class="w-100 ps-3">
+                <div class=""><a class="wd-link fw-bold" href="#">Relativity Space </a><i class="fa-solid fa-circle-check d-none d-xl-inline" title="Verified User"></i></div>
+                <div class="">@relativityspace</div>
+              </div>
+              <div class=""><button class="btn btn-primary rounded-pill" type="button" value="Input">Follow</button></div>
+            </div>
+            <!-- 3 -->
+            <div class="d-flex list-group-item list-group-item-action align-items-center">
+              <div class=""><img class="wd-logo rounded-circle" src="images/virgin-logo.jpg" alt=""></div>
+              <div class="w-100 ps-3">
+                <div class=""><a class="wd-link fw-bold" href="#">Virgin Galactic </a><i class="fa-solid fa-circle-check d-none d-xl-inline" title="Verified User"></i></div>
+                <div class="">@virgingalactic</div>
+              </div>
+              <div class=""><button class="btn btn-primary rounded-pill" type="button" value="Input">Follow</button></div>
+            </div>
+            <!-- 4 -->
+            <div class="d-flex list-group-item list-group-item-action align-items-center">
+              <div class=""><img class="wd-logo rounded-circle" src="images/nasa-logo.jpg" alt=""></div>
+              <div class="w-100 ps-3">
+                <div class=""><a class="wd-link fw-bold" href="#">NASA </a><i class="fa-solid fa-circle-check" title="Verified User"></i></div>
+                <div class="">@NASA</div>
+              </div>
+              <div class=""><button class="btn btn-primary rounded-pill" type="button" value="Input">Follow</button></div>
+            </div>
+            <!-- 5 -->
+            <div class="d-flex list-group-item list-group-item-action align-items-center">
+              <div class=""><img class="wd-logo rounded-circle" src="images/tesla-logo.jpg" alt=""></div>
+              <div class="w-100 ps-3">
+                <div class=""><a class="wd-link fw-bold" href="#">Tesla </a><i class="fa-solid fa-circle-check" title="Verified User"></i></div>
+                <div class="">@Tesla</div>
+              </div>
+              <div class=""><button class="btn btn-primary rounded-pill" type="button" value="Input">Follow</button></div>
+            </div>
           </div>
-          <div class="wd-column-right wd-tuiter-box-height"><img class="wd-tuiter-image" src="images/old_dog.jpg" title="Image"/></div>
+
+          <div class="wd-follow-term"></div>
         </div>
-        <!-- 6th tuiter -->
-        <div class="wd-tuiter wd-border wd-color-white">
-          <div class="wd-column-left wd-tuiter-box-height">
-            <div class="wd-topic wd-color-light-gray">NCAA Men's Basketball · LIVE</div>
-            <div class="wd-title">Boilermakers at Hoosiers</div>
-          </div>
-          <div class="wd-column-right wd-tuiter-box-height"><img class="wd-tuiter-image" src="images/ncaa.jpg" title="Image"/></div>
-        </div>
-        <!-- 7th tuiter -->
-        <div class="wd-tuiter wd-border wd-color-white">
-          <div class="wd-column-left">
-            <div class="wd-topic wd-color-light-gray">NFL · Trending</div>
-            <div class="wd-title">Brian Schottenheimer</div>
-            <div class="wd-num-tuits wd-color-light-gray">1,570 Tuits</div>
-          </div>
-          <div class="wd-column-right"><i class="fa fa-ellipsis-h wd-color-light-gray" title="More"></i></div>
-        </div>
+
       </div>
     </div>
+  
   </body>
 </html>
