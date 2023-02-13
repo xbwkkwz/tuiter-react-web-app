@@ -1,27 +1,87 @@
 .fa-solid.fa-gear {
-    font-size: 1.7em;
-  }
-  
-  .wd-main-img {
-    width: 100%;
-  }
-  
-  .wd-tweet-img {
-    width: 100px;
-    height: 100px;
-  }
-  
-  .wd-logo {
-    width: 48px;
-    height: 48px;
-  }
-  
-  .wd-link {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .wd-follow-button {
-    background-color: #26a7de;
-    border-color: black;
-  }
+  font-size: 1.1em;
+  color: black;
+}
+
+.form-control.rounded-pill {
+  background-color: rgb(240, 244, 244);
+  border: none;
+}
+
+.wd-main-1-glass {
+  left: 30px;
+}
+
+.wd-main-img {
+  width: 100%;
+}
+
+.wd-tweet-img {
+  width: 100px;
+  height: 100px;
+}
+
+.wd-logo {
+  width: 48px;
+  height: 48px;
+}
+
+.wd-link {
+  text-decoration: none;
+  color: black;
+}
+
+.wd-nav-button > .btn {
+  background-color: rgb(29, 155, 240);
+  border-color: rgb(29, 155, 240);
+}
+
+.wd-follow-button {
+  background-color: black;
+  border-color: black;
+}
+
+.fa-solid.fa-circle-check {
+  color: rgb(29, 155, 240);
+}
+
+.fa-solid.fa-circle-check.wd-nasa {
+  color: goldenrod; 
+}
+
+.wd-follow-list-more, .wd-blue-color {
+  color: rgb(29, 155, 240);
+}
+
+.list-group-item {
+  border: none;
+}
+
+.wd-follow-list .list-group-item {
+  background-color: rgb(240, 244, 244);
+}
+
+.wd-follow-list {
+  border-radius: 15px;
+}
+
+.fa-solid.fa-t {
+  color:rgb(29, 155, 240);
+}
+
+.fa-solid.fa-circle {
+  font-size: 0.3em;
+  color:rgb(29, 155, 240);
+  left: 32px;
+}
+
+.wd-nav-inner.active {
+  border-bottom-style: solid; 
+  border-bottom-width: 4px;
+  border-color:rgb(29, 155, 240);
+}
+
+.wd-main-img {
+  border-bottom-style: solid; 
+  border-bottom-width: 7px;
+}
