@@ -7,7 +7,7 @@ const ExploreComponent = () => {
     <div class="wd-main-1 position-relative d-flex align-items-center mb-2">
       <div class="wd-main-1-glass position-absolute start-0 ms-3"><i class="fa-solid fa-magnifying-glass"></i></div>
       <div class="wd-main-1-search w-100 me-4"><form action=""><input class="form-control rounded-pill ps-5" type="text" placeholder="Search Twitter" name="search"></form></div>
-      <div class="wd-main-1-setting"><a href="#" title="Settings"><i class="fa-solid fa-gear"></i></a></div>
+      <div class="wd-main-1-setting"><a href="#" title="Settings"><i class="fa-solid fa-gear text-primary"></i></a></div>
     </div>
 
     <!-- navigation bar -->
@@ -22,7 +22,7 @@ const ExploreComponent = () => {
     <!-- image with overlaid text -->
     <div class="wd-main-3 position-relative mb-2">
       <img class="w-100" src=${largeImage[0].image} alt="">
-      <div class="position-absolute bottom-0 start-0 ms-2 mb-1 fs-2 fw-bold text-white">${largeImage[0].title}</div>
+      <div class="position-absolute bottom-0 start-0 ms-2 mb-1 fs-2 fw-bold text-light">${largeImage[0].title}</div>
     </div>
 
     <!-- Main posts -->

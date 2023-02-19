@@ -12,7 +12,7 @@
   height: 48px;
 }
 
-.wd-userName, .wd-title {
+a, a:hover {
   text-decoration: none;
-  color: white;
+  color: inherit;
 }
