@@ -2,6 +2,10 @@
   font-size: 1.7em;
 }
 
+.wd-main-img {
+  width: 100%;
+}
+
 .wd-tweet-img {
   width: 100px;
   height: 100px;
@@ -12,7 +16,7 @@
   height: 48px;
 }
 
-.wd-userName, .wd-title {
+.wd-link {
   text-decoration: none;
-  color: white;
+  color: black;
 }
