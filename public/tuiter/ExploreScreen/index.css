@@ -2,7 +2,7 @@
   font-size: 1.7em;
 }
 
-.wd-tweet-img {
+.wd-post-summary-img {
   width: 100px;
   height: 100px;
 }
@@ -12,7 +12,7 @@
   height: 48px;
 }
 
-a, a:hover {
+.wd-userName, .wd-title, .wd-userName:hover, .wd-title:hover {
   text-decoration: none;
   color: inherit;
 }

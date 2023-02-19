@@ -1,0 +1,31 @@
+let posts = [
+  { avatarIcon: '../../images/elon-logo.jpg',
+    userName: 'Elon Musk', 
+    handle: 'elonmusk',
+    time: '23h',
+    content: 'Amazing show about @Inspiration4x mission!',
+    link: '',
+    image: '../../images/countdown-post.jpg',
+    titleExternal: 'CountDown: Inspiration4 Mission to Space | Netflix Official Site',
+    contentExternal: 'From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space ...',
+    linkExternal: 'netflix.com',
+    replies: '4.2K',
+    reposts: '3.5K',
+    likes: '37.5K', },
+
+  { avatarIcon: '../../images/nyp-logo.jpg',
+    userName: 'New York Post', 
+    handle: 'nypost',
+    time: '23h',
+    content: 'Grimes seen reading Karl Marx following split with world\'s richest man Elon Musk',
+    link: 'trib.al/nx2Gfaq',
+    image: '../../images/nyp-post.jpg',
+    titleExternal: '',
+    contentExternal: '',
+    linkExternal: '',
+    replies: '965',
+    reposts: '2.4K',
+    likes: '4K', },
+  
+];
+export default posts;

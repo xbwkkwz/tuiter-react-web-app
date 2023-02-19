@@ -1,0 +1,17 @@
+.wd-userName, .wd-title, .wd-post-link, .wd-post-button {
+  text-decoration: none;
+}
+
+.wd-userName, .wd-title, .wd-post-button, .wd-userName:hover, .wd-title:hover {
+  color: inherit;
+}
+
+.wd-post-summary-img {
+  width: 100px;
+  height: 100px;
+}
+
+.wd-logo {
+  width: 48px;
+  height: 48px;
+}
