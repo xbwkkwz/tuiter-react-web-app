@@ -17,8 +17,8 @@ const PostSummaryItem = (
           <div><span className="fw-bolder">{post.userName}</span> <i className="bi bi-patch-check-fill text-primary"></i> <span className="text-secondary">· {post.time}</span></div>
           <div>{post.title}</div>
         </div>
-        <div className="col-2">
-          <img width={100} className="float-end rounded-3" src={`/images/${post.image}`} alt=""/>
+        <div className="col-2 px-0">
+          <img className="w-100 rounded-3" src={`/images/${post.image}`} alt=""/>
         </div>
       </div>
     </li>
