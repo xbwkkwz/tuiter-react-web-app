@@ -15,15 +15,15 @@ const ExploreComponent = () => {
       </div>
 
       <ul className="nav nav-pills mb-2">
-        <li className="nav-item"><a className="nav-link active" href="#">For You</a></li>
-        <li className="nav-item"><a className="nav-link" href="#">Trending</a></li>
-        <li className="nav-item"><a className="nav-link" href="#">News</a></li>
-        <li className="nav-item"><a className="nav-link" href="#">Sports</a></li>
-        <li className="nav-item d-none d-md-inline"><a className="nav-link" href="#">Entertainment</a></li>
+        <li className="nav-item"><a className="nav-link active">For You</a></li>
+        <li className="nav-item"><a className="nav-link">Trending</a></li>
+        <li className="nav-item"><a className="nav-link">News</a></li>
+        <li className="nav-item"><a className="nav-link">Sports</a></li>
+        <li className="nav-item d-none d-md-inline"><a className="nav-link">Entertainment</a></li>
       </ul>
 
       <div className="position-relative mb-2">
-        <img src="/images/spacex.jpg" className="w-100"/>
+        <img className="w-100" src="/images/spacex.jpg" alt=""/>
         <h1 className="position-absolute wd-nudge-up text-white">SpaceX's Starship</h1>
       </div>
 

@@ -9,39 +9,39 @@ const NavigationSidebar = () => {
   return (
     <>
       <div className="list-group mb-2">
-        <Link to="/" className="list-group-item" href="#">
+        <Link to="/" className="list-group-item">
         <i className="bi bi-align-top" title="Tuiter"></i>
         <span className="d-none d-xl-inline"> Back to Labs</span></Link>
 
-        <Link to="/tuiter/home" className={`list-group-item ${active === 'home' ? 'active' : ''}`} href="#">
+        <Link to="/tuiter/home" className={`list-group-item ${active === 'home' ? 'active' : ''}`}>
           <i className="bi bi-house" title="Home"></i>
           <span className="d-none d-xl-inline"> Home</span></Link>
         
-        <Link to="/tuiter/explore" className={`list-group-item ${active === 'explore' ? 'active' : ''}`} href="#">
+        <Link to="/tuiter/explore" className={`list-group-item ${active === 'explore' ? 'active' : ''}`}>
           <i className="bi bi-hash" title="Explore"></i>
           <span className="d-none d-xl-inline"> Explore</span></Link>
 
-        <a className={`list-group-item ${active === 'notifications' ? 'active' : ''}`} href="#">
+        <a className={`list-group-item ${active === 'notifications' ? 'active' : ''}`}>
           <i className="bi bi-bell" title="Notifications"></i>
           <span className="d-none d-xl-inline"> Notifications</span></a>
 
-        <a className={`list-group-item ${active === 'messages' ? 'active' : ''}`} href="#">
+        <a className={`list-group-item ${active === 'messages' ? 'active' : ''}`}>
           <i className="bi bi-envelope" title="Messages"></i>
           <span className="d-none d-xl-inline"> Messages</span></a>
 
-        <a className={`list-group-item ${active === 'bookmarks' ? 'active' : ''}`} href="#">
+        <a className={`list-group-item ${active === 'bookmarks' ? 'active' : ''}`}>
           <i className="bi bi-bookmark" title="Bookmarks"></i>
           <span className="d-none d-xl-inline"> Bookmarks</span></a>
 
-        <a className={`list-group-item ${active === 'lists' ? 'active' : ''}`} href="#">
+        <a className={`list-group-item ${active === 'lists' ? 'active' : ''}`}>
           <i className="bi bi-list" title="Lists"></i>
           <span className="d-none d-xl-inline"> Lists</span></a>
 
-        <a className={`list-group-item ${active === 'profile' ? 'active' : ''}`} href="#">
+        <a className={`list-group-item ${active === 'profile' ? 'active' : ''}`}>
           <i className="bi bi-person" title="Profile"></i>
           <span className="d-none d-xl-inline"> Profile</span></a>
 
-        <a className={`list-group-item ${active === 'more' ? 'active' : ''}`} href="#">
+        <a className={`list-group-item ${active === 'more' ? 'active' : ''}`}>
           <i className="bi bi-three-dots" title="More"></i>
           <span className="d-none d-xl-inline"> More</span></a>
       </div>
