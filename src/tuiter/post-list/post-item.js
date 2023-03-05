@@ -32,7 +32,7 @@ const PostItem = (
       {/* 2 main part */}
       <div className="d-flex mb-2">
         <div className="me-3">
-          <img className="rounded-circle" width={48} src={`/images/${post.avatarIcon}`}/>
+          <img className="rounded-circle" width={48} src={`/images/${post.avatarIcon}`} alt=""/>
         </div>
         {/* right part */}
         <div className="w-100">
@@ -44,7 +44,7 @@ const PostItem = (
           <div className="mb-2">{post.content} <Link to="" style={{textDecorationLine:"none"}}>{post.link}</Link></div>
           
           <ul className="list-group rounded-3">
-            <div className="list-group-item p-0"><img className={`w-100 ${("titleExternal" in post) ? "rounded-top" : "rounded-3"}`} src={`/images/${post.image}`}/></div>
+            <div className="list-group-item p-0"><img className={`w-100 ${("titleExternal" in post) ? "rounded-top" : "rounded-3"}`} src={`/images/${post.image}`} alt=""/></div>
             <div className={`list-group-item ${("titleExternal" in post) ? "d-block" : "d-none"}`}>
               <div className="fw-bolder">{post.titleExternal}</div>
               <div>{post.contentExternal}</div>
