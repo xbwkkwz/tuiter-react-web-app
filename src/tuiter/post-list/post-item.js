@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 const PostItem = (
   {
     post = {
@@ -36,10 +38,10 @@ const PostItem = (
         <div className="w-100">
           <div>
             <span className="fw-bolder">{post.userName}</span> <i className="bi bi-patch-check-fill text-primary"></i> <span className="text-secondary">@{post.handle} · {post.time}</span>
-            <Link to="home" className="text-secondary float-end" title="More"><i className="bi bi-three-dots"></i></Link>
+            <Link to="" className="text-secondary float-end" title="More"><i className="bi bi-three-dots"></i></Link>
           </div>
           
-          <div className="mb-2">{post.content} <Link to="home" style={{textDecorationLine:"none"}}>{post.link}</Link></div>
+          <div className="mb-2">{post.content} <Link to="" style={{textDecorationLine:"none"}}>{post.link}</Link></div>
           
           <ul className="list-group rounded-3">
             <div className="list-group-item p-0"><img className={`w-100 ${("titleExternal" in post) ? "rounded-top" : "rounded-3"}`} src={`/images/${post.image}`}/></div>
@@ -54,14 +56,14 @@ const PostItem = (
 
       {/* 3 buttons */}
       <div className="d-flex justify-content-between mx-5 px-3">
-        <Link to="home" className="text-secondary" style={{textDecorationLine:"none"}} title="Reply"><i className="bi bi-chat me-3"></i>{post.replies}</Link>
-        <Link to="home" className="text-secondary" style={{textDecorationLine:"none"}} title="Repost"><i className="bi bi-repeat me-3"></i>{post.reposts}</Link>
-        <Link to="home" className="text-secondary" style={{textDecorationLine:"none"}} title="Like"><i className="bi bi-heart me-3"></i>{post.likes}</Link>
-        <Link to="home" className="text-secondary" style={{textDecorationLine:"none"}} title="Share"><i className="bi bi-upload me-3"></i></Link>
+        <Link to="" className="text-secondary" style={{textDecorationLine:"none"}} title="Reply"><i className="bi bi-chat me-3"></i>{post.replies}</Link>
+        <Link to="" className="text-secondary" style={{textDecorationLine:"none"}} title="Repost"><i className="bi bi-repeat me-3"></i>{post.reposts}</Link>
+        <Link to="" className="text-secondary" style={{textDecorationLine:"none"}} title="Like"><i className="bi bi-heart me-3"></i>{post.likes}</Link>
+        <Link to="" className="text-secondary" style={{textDecorationLine:"none"}} title="Share"><i className="bi bi-upload me-3"></i></Link>
       </div>
 
       {/* 4 last */}
-      <Link to="home" className={`mx-5 px-3 mt-3 ${("showThread" in post) ? "d-block" : "d-none"}`} style={{textDecorationLine:"none"}}>Show this thread</Link>
+      <Link to="" className={`mx-5 px-3 mt-3 ${("showThread" in post) ? "d-block" : "d-none"}`} style={{textDecorationLine:"none"}}>Show this thread</Link>
     </li>
   );
 };
