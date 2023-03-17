@@ -2,7 +2,7 @@
 import NavigationSidebar from "./navigation-sidebar";
 import HomeComponent from "./home";
 import ExploreComponent from "./explore";
-import PostSummaryList from "./post-summary-list";
+// import PostSummaryList from "./post-summary-list";
 import WhoToFollowList from "./who-to-follow-list";
 
 import {Routes, Route} from "react-router";

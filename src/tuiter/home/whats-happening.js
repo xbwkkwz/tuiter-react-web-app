@@ -19,7 +19,7 @@ const WhatsHappening = () => {
   return (
     <div className="row mx-0">
       <div className="col-2 px-0">
-        <img src="/images/nasa-logo.jpg" width={60}/>
+        <img src="/images/nasa-logo.jpg" width={60} alt=""/>
       </div>
 
       <div className="col-10 px-0">
