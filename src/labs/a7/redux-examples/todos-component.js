@@ -22,7 +22,7 @@ const Todos = () => {
   };
 
   const toggleTodoDone = (todo) => {
-    dispatch(todoDoneToggle(todo))
+    dispatch(todoDoneToggle(todo));
   };
     
   return(

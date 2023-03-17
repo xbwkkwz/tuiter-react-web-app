@@ -1,9 +1,14 @@
-import PostList from "../post-list";
+// import PostList from "../post-list";
+import React from "react";
+import WhatsHappening from "./whats-happening";
+import TuitsList from "../tuits/TuitsList";
 
 const HomeComponent= () => {
   return(
     <>
-      <PostList/> 
+      <h4>Home</h4>
+      <WhatsHappening/>
+      <TuitsList/> 
     </>
   );
 }
