@@ -82,7 +82,7 @@ const EditProfile= () => {
 
       {/* 3 icon and button */}
       <div className="position-relative px-2">
-        <img className="rounded-circle position-absolute wd-nudge-up" width={160} src={`/images/${profile.avatarIcon}`} alt=""/>
+        <img className="rounded-circle position-absolute" width={160} src={`/images/${profile.avatarIcon}`} alt="" style={{top:"-80px", left:"20px"}}/>
         <button className="btn btn-secondary rounded-pill position-absolute opacity-75" style={{top:"-30px", left:"70px"}} title="Change"><i className="bi bi-camera fs-3 text-white"></i></button>
         <button className="btn btn-secondary rounded-pill position-absolute opacity-75" style={{top:"-200px", left:"250px"}} title="Change"><i className="bi bi-camera fs-3 text-white"></i></button>
         <button className="btn btn-secondary rounded-pill position-absolute opacity-75" style={{top:"-200px", left:"330px"}} title="Cancel"><i className="bi bi-x-lg fs-3 text-white"></i></button>

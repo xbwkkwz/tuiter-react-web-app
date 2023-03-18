@@ -6,6 +6,9 @@ import "./index.css";
 const ProfileComponent= () => {
   const profile = useSelector(state => state.profile);
 
+  const month = {"01": "January", "02": "February", "03": "March", "04": "April", "05": "May", "06": "June",
+                 "07": "July", "08": "August", "09": "September", "10": "October", "11": "November", "12": "December"};
+
   return(
     <div className="border rounded-2">
       {/* 1 head */}
@@ -19,7 +22,7 @@ const ProfileComponent= () => {
 
       {/* 3 icon and button */}
       <div className="position-relative px-2">
-        <img className="rounded-circle position-absolute wd-nudge-up" width={160} src={`/images/${profile.avatarIcon}`} alt=""/>
+        <img className="rounded-circle position-absolute" width={160} src={`/images/${profile.avatarIcon}`} alt="" style={{top:"-80px", left:"20px"}}/>
         <Link to="/tuiter/edit-profile" className="btn btn-outline-dark rounded-pill float-end">Edit profile</Link>
       </div>
 
@@ -42,8 +45,8 @@ const ProfileComponent= () => {
         {("location" in profile) && (profile.location !== "") && 
           <><i className="bi bi-geo-alt"></i><span className="ms-1 me-3">{profile.location}</span></>}
         {("dateOfBirth" in profile) && (profile.dateOfBirth !== "") && 
-          <><i className="bi bi-balloon"></i><span className="ms-1 me-3">Born {profile.dateOfBirth}</span></>}
-        <i className="bi bi-calendar"></i><span className="ms-1 me-3">Joined {profile.dateJoined}</span>
+          <><i className="bi bi-balloon"></i><span className="ms-1 me-3">Born {month[profile.dateOfBirth.slice(5,7)] + " " + profile.dateOfBirth.slice(8,10) + ", " + profile.dateOfBirth.slice(0,4)}</span></>}
+        <i className="bi bi-calendar"></i><span className="ms-1 me-3">Joined {month[profile.dateJoined.slice(5,7)] + " " + profile.dateJoined.slice(0,4)}</span>
       </div>
       
       {/* 9 followers */}
