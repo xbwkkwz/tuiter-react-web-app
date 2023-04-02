@@ -1,7 +1,8 @@
 import {Link} from "react-router-dom";
 import React from "react";
 import {useDispatch} from "react-redux";
-import { deleteTuit } from "./tuits-reducer";
+// import { deleteTuit } from "./tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 import TuitStats from "./TuitStats";
 
 const checkRepost = (post) => {
@@ -84,6 +85,7 @@ const checkExternal = (post) => {
 const TuitItem = (
   {
     post = {
+      "_id": 123,
       "repostBy": "Elon Musk",
       "avatarIcon": "elon-logo.jpg",
       "userName": "Elon Musk", 
@@ -105,8 +107,9 @@ const TuitItem = (
 
   const dispatch = useDispatch();
 
-  const deleteTuitHandler = (tuit) => {
-    dispatch(deleteTuit(tuit));
+  const deleteTuitHandler = (id) => {
+    // dispatch(deleteTuit(tuit));
+    dispatch(deleteTuitThunk(id));
   }
 
   return(
@@ -123,7 +126,7 @@ const TuitItem = (
         <div className="w-100">
           <div>
             <span className="fw-bolder">{post.userName}</span> <i className="bi bi-patch-check-fill text-primary"></i> <span className="text-secondary">@{post.handle} · {post.time}</span>
-            <Link to="" className="text-secondary float-end" title="Delete" onClick={() => deleteTuitHandler(post)}><i className="bi bi-x-lg"></i></Link>
+            <Link to="" className="text-secondary float-end" title="Delete" onClick={() => deleteTuitHandler(post._id)}><i className="bi bi-x-lg"></i></Link>
           </div>
           
           {/* post content here */}
