@@ -7,23 +7,23 @@ const initialState = {
   loading: false
 };  
 
-const currentUser = {
-  "avatarIcon": "nasa-logo.jpg",
-  "userName": "NASA",
-  "handle": "NASA",
-};
+// const currentUser = {
+//   "avatarIcon": "nasa-logo.jpg",
+//   "userName": "NASA",
+//   "handle": "NASA",
+// };
 
-const templateTuit = {
-  ...currentUser,
-  "time": "1s",
-  "topic": "Trending",
-  "title": "News from NASA.",
-  "showThread" : false,
-  "replies": 0,
-  "retuits": 0,
-  "likes": 0,
-  "liked": false
-};
+// const templateTuit = {
+//   ...currentUser,
+//   "time": "1s",
+//   "topic": "Trending",
+//   "title": "News from NASA.",
+//   "showThread" : false,
+//   "replies": 0,
+//   "retuits": 0,
+//   "likes": 0,
+//   "liked": false
+// };
 
 const tuitsSlice = createSlice({
   name: 'tuits',
