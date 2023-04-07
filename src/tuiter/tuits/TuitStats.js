@@ -19,12 +19,18 @@ const TuitStats = (
 
   const likeTuitHandler = (tuit) => {
     // dispatch(likeTuit(tuit));
-    dispatch(updateTuitThunk(tuit));
+    let newTuit = {"_id": tuit._id, "likes": 0, "liked": false};
+    newTuit.liked = !tuit.liked;
+    newTuit.likes = (newTuit.liked === true) ? tuit.likes + 1 : tuit.likes - 1;
+    dispatch(updateTuitThunk(newTuit));
   };
 
   const dislikeTuitHandler = (tuit) => {
     // dispatch(likeTuit(tuit));
-    dispatch(dislikeTuitThunk(tuit));
+    let newTuit = {"_id": tuit._id, "dislikes": 0, "disliked": false};
+    newTuit.disliked = !tuit.disliked;
+    newTuit.dislikes = (newTuit.disliked === true) ? tuit.dislikes + 1 : tuit.dislikes - 1;
+    dispatch(dislikeTuitThunk(newTuit));
   };
 
   return(

@@ -2,7 +2,7 @@ import axios from 'axios';
 // const TUITS_API = 'http://localhost:4000/api/tuits';
 // const TUITS_API = 'https://tuiter-node-server-app-i8h6.onrender.com/api/tuits';
 // new server api for mongodb: "https://tuiter-node-mongodb.onrender.com/api"
-const API_BASE = process.env.REACT_APP_API_BASE;
+const API_BASE = process.env.REACT_APP_API_BASE_mongo;
 const TUITS_API = `${API_BASE}/tuits`;
 
 export const findTuits = async () => {
